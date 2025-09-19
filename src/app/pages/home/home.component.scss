@@ -101,6 +101,15 @@
 .bunny {
   font-size: 8rem;
   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+  
+  &.bunny-2 {
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    font-size: 4rem;
+    animation: float 3s ease-in-out infinite reverse;
+    opacity: 0.8;
+  }
 }
 
 .stars {

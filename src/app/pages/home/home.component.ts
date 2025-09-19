@@ -13,12 +13,12 @@ export class HomeComponent {
     {
       icon: '🚀',
       title: 'Fast & Modern',
-      description: 'Built with the latest Angular framework for optimal performance'
+      description: 'Built with the latest mobile frameworks for optimal performance'
     },
     {
       icon: '🎨',
       title: 'Beautiful Design',
-      description: 'Modern UI with responsive design that works on all devices'
+      description: 'Modern UI'
     },
     {
       icon: '🔧',
