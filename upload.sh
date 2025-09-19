@@ -5,7 +5,7 @@
 # Methods: sftp, scp, curl-ftp
 
 METHOD=${1:-sftp}
-USERNAME=${2:-"your_username"}
+USERNAME=${2:-"serg.gorenko@gmail.com"}
 HOSTNAME=${3:-"bunnyh.nl"}
 
 echo "🚀 Uploading S&Y website to $HOSTNAME using $METHOD..."

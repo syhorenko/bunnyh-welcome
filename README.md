@@ -1,116 +1,59 @@
-# S&Y Welcome Page
+# BunnyhWelcomeAngular
 
-A simple, elegant welcome page for S&Y with a pastel dark blue color scheme.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.2.
 
-## Features
+## Development server
 
-- Responsive design that works on all devices
-- Modern glassmorphism design with backdrop blur effects
-- Pastel dark blue gradient background
-- Clean typography using Inter font
-- Smooth hover animations
-- Three feature cards highlighting key values
+To start a local development server, run:
 
-## Files Structure
-
-```
-bunnyh-welcome/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles with pastel dark blue theme
-├── .gitignore          # Git ignore file
-└── README.md           # This file
+```bash
+ng serve
 ```
 
-## How to Deploy to bunnyh.nl
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-### Option 1: Using FTP/SFTP (Recommended for simple hosting)
+## Code scaffolding
 
-1. **Prepare your files:**
-   - Make sure you have `index.html` and `styles.css` ready
-   - These are the only files you need to upload
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-2. **Connect to your hosting:**
-   - Use an FTP client like FileZilla, WinSCP, or Cyberduck
-   - Connect to your hosting server using your FTP credentials
-   - Usually provided by your hosting provider
+```bash
+ng generate component component-name
+```
 
-3. **Upload files:**
-   - Navigate to the `public_html` or `www` folder (this is your website root)
-   - Upload `index.html` and `styles.css` to this folder
-   - Make sure `index.html` is in the root directory
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-4. **Test your site:**
-   - Visit `http://bunnyh.nl` in your browser
-   - Your welcome page should be live!
+```bash
+ng generate --help
+```
 
-### Option 2: Using cPanel File Manager
+## Building
 
-1. **Access cPanel:**
-   - Log into your hosting control panel (cPanel)
-   - Look for "File Manager" in the Files section
+To build the project run:
 
-2. **Navigate to web root:**
-   - Open File Manager
-   - Navigate to `public_html` folder
+```bash
+ng build
+```
 
-3. **Upload files:**
-   - Click "Upload" button
-   - Select your `index.html` and `styles.css` files
-   - Upload them to the `public_html` directory
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-### Option 3: Using Git with Hosting Provider
+## Running unit tests
 
-If your hosting provider supports Git deployment:
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-1. **Push to remote repository:**
-   ```bash
-   git remote add origin <your-repository-url>
-   git push -u origin master
-   ```
+```bash
+ng test
+```
 
-2. **Set up auto-deployment:**
-   - Configure your hosting provider to auto-deploy from your Git repository
-   - Many providers like Netlify, Vercel, or GitHub Pages can do this automatically
+## Running end-to-end tests
 
-### Option 4: Using Command Line (if you have SSH access)
+For end-to-end (e2e) testing, run:
 
-1. **Connect via SSH:**
-   ```bash
-   ssh username@bunnyh.nl
-   ```
+```bash
+ng e2e
+```
 
-2. **Navigate to web directory:**
-   ```bash
-   cd public_html
-   ```
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-3. **Upload files:**
-   ```bash
-   # Copy files from your local machine
-   scp index.html username@bunnyh.nl:public_html/
-   scp styles.css username@bunnyh.nl:public_html/
-   ```
+## Additional Resources
 
-## Customization
-
-To customize the website:
-
-1. **Change colors:** Edit the CSS variables in `styles.css`
-2. **Update content:** Modify the text in `index.html`
-3. **Add features:** Add new sections or modify existing ones
-
-## Browser Support
-
-This website works on all modern browsers including:
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## Contact
-
-For questions about this website, contact S&Y team.
-
----
-
-**Note:** Make sure your hosting provider supports static HTML files and has the necessary permissions set up for your domain.
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

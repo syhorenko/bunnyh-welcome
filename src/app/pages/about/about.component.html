@@ -1,0 +1,107 @@
+<div class="about-container">
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="container">
+      <h1 class="page-title">About Us</h1>
+      <p class="page-subtitle">
+        We are a passionate team dedicated to creating exceptional mobile apps experiences 
+        that make a difference in people's lives.
+      </p>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="story">
+    <div class="container">
+      <div class="story-content">
+        <div class="story-text">
+          <h2>Our Story</h2>
+          <p>
+            Founded in 2011, BunnyH started as a small team with a big dream: to revolutionize 
+            how people interact with mobile applications. We believe that technology should be 
+            accessible, beautiful, and powerful.
+          </p>
+          <p>
+            Our journey began when we loved mobile apps. We set out to create the perfect balance - applications that are 
+            powerful yet intuitive, feature-rich yet easy to use.
+          </p>
+          <p>
+            Today, we're proud to serve thousands of users worldwide, helping them achieve 
+            their goals through our innovative solutions.
+          </p>
+        </div>
+        <div class="story-image">
+          <div class="story-illustration">
+            <div class="bunny-team">🐰👥</div>
+            <div class="floating-elements">
+              <span class="element">💡</span>
+              <span class="element">⚡</span>
+              <span class="element">🎨</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="values">
+    <div class="container">
+      <h2 class="section-title">Our Values</h2>
+      <div class="values-grid">
+        @for (value of values; track value.title) {
+          <div class="value-card">
+            <div class="value-icon">{{ value.icon }}</div>
+            <h3 class="value-title">{{ value.title }}</h3>
+            <p class="value-description">{{ value.description }}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team">
+    <div class="container">
+      <h2 class="section-title">Meet Our Team</h2>
+      <div class="team-grid">
+        @for (member of teamMembers; track member.name) {
+          <div class="team-card">
+            <div class="member-image">{{ member.image }}</div>
+            <h3 class="member-name">{{ member.name }}</h3>
+            <p class="member-role">{{ member.role }}</p>
+            <p class="member-description">{{ member.description }}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="mission">
+    <div class="container">
+      <div class="mission-content">
+        <h2>Our Mission</h2>
+        <p class="mission-text">
+          To empower individuals and businesses with innovative mobile solutions that are 
+          not just functional, but delightful to use. We believe that great software 
+          should make complex tasks simple and bring joy to everyday interactions.
+        </p>
+        <div class="mission-stats">
+          <div class="stat">
+            <div class="stat-number">1000+</div>
+            <div class="stat-label">Happy Users</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Support</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,133 @@
+<div class="contact-container">
+  <!-- Hero Section -->
+  <section class="contact-hero">
+    <div class="container">
+      <h1 class="page-title">Contact Us</h1>
+      <p class="page-subtitle">
+        We'd love to hear from you. Get in touch with us and let's start a conversation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <section class="contact-content">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form-section">
+          <h2>Send us a Message</h2>
+          <form (ngSubmit)="onSubmit()" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                [(ngModel)]="contactForm.name"
+                required
+                placeholder="Your full name"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                [(ngModel)]="contactForm.email"
+                required
+                placeholder="your.email@example.com"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                [(ngModel)]="contactForm.subject"
+                placeholder="What's this about?"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                [(ngModel)]="contactForm.message"
+                required
+                rows="6"
+                placeholder="Tell us how we can help you..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" [disabled]="isSubmitting">
+              <span class="btn-icon" *ngIf="!isSubmitting">📤</span>
+              <span class="btn-icon" *ngIf="isSubmitting">⏳</span>
+              {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+            </button>
+
+            <!-- Status Message -->
+            <div class="status-message" *ngIf="submitMessage" [class.error]="submitMessage.includes('error') || submitMessage.includes('required')">
+              {{ submitMessage }}
+            </div>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info-section">
+          <h2>Get in Touch</h2>
+          <p class="contact-intro">
+            We're here to help! Choose the most convenient way to reach us.
+          </p>
+
+          <div class="contact-info-grid">
+            @for (info of contactInfo; track info.title) {
+              <div class="contact-info-card">
+                <div class="info-icon">{{ info.icon }}</div>
+                <div class="info-content">
+                  <h3 class="info-title">{{ info.title }}</h3>
+                  <p class="info-details">{{ info.details }}</p>
+                  <p class="info-description">{{ info.description }}</p>
+                </div>
+              </div>
+            }
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-section">
+            <h3>Follow Us</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>How quickly do you respond?</h3>
+          <p>We typically respond to all inquiries within 24 hours during business days.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you offer custom development?</h3>
+          <p>Yes! We specialize in custom web applications tailored to your specific needs.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What technologies do you use?</h3>
+          <p>We work with iOS&Android.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you provide ongoing support?</h3>
+          <p>Absolutely! We offer comprehensive support and maintenance packages.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
