@@ -5,9 +5,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:github-pages": "ng build --configuration=github-pages",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:bunnyh-welcome-angular": "node dist/bunnyh-welcome-angular/server/server.mjs"
+    "serve:ssr:bunnyh-welcome-angular": "node dist/bunnyh-welcome-angular/server/server.mjs",
+    "deploy": "npm run build:github-pages && cp CNAME docs/ && cp docs/index.html docs/404.html && git add docs && git commit -m 'Deploy Angular app to GitHub Pages' && git push origin main"
   },
   "prettier": {
     "printWidth": 100,
@@ -44,6 +46,7 @@
     "@types/express": "^5.0.1",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^20.17.19",
+    "angular-cli-ghpages": "^2.0.3",
     "jasmine-core": "~5.9.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

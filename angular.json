@@ -23,6 +23,7 @@
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
+            "outputPath": "docs",
             "assets": [
               {
                 "glob": "**/*",
@@ -53,6 +54,11 @@
                 }
               ],
               "outputHashing": "all"
+            },
+            "github-pages": {
+              "baseHref": "/",
+              "outputHashing": "all",
+              "outputMode": "static"
             },
             "development": {
               "optimization": false,
