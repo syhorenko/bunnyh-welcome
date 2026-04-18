@@ -4,7 +4,7 @@
 
 // Hero Section
 .hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 50%, #ec4899 100%);
   color: white;
   padding: 4rem 2rem;
   min-height: 80vh;
@@ -29,7 +29,7 @@
 }
 
 .highlight {
-  background: linear-gradient(45deg, #ff6b6b, #feca57);
+  background: linear-gradient(45deg, #06b6d4, #ec4899);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -56,13 +56,15 @@
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   text-align: center;
 
   &.btn-primary {
     background: white;
-    color: #667eea;
-    
+    color: #8b5cf6;
+
     &:hover {
       transform: translateY(-2px);
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
@@ -73,10 +75,10 @@
     background: transparent;
     color: white;
     border: 2px solid white;
-    
+
     &:hover {
       background: white;
-      color: #667eea;
+      color: #8b5cf6;
       transform: translateY(-2px);
     }
   }
@@ -87,59 +89,33 @@
   }
 }
 
+.download-icon {
+  font-size: 1.2em;
+}
+
+.version-info {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
 .hero-image {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.bunny-illustration {
-  position: relative;
+.app-icon {
+  width: 300px;
+  height: 300px;
+  border-radius: 50px;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
   animation: float 3s ease-in-out infinite;
-}
-
-.bunny {
-  font-size: 8rem;
-  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
-  
-  &.bunny-2 {
-    position: absolute;
-    top: 20px;
-    right: -30px;
-    font-size: 4rem;
-    animation: float 3s ease-in-out infinite reverse;
-    opacity: 0.8;
-  }
-}
-
-.stars {
-  position: absolute;
-  top: -20px;
-  right: -20px;
-}
-
-.star {
-  display: block;
-  font-size: 2rem;
-  animation: twinkle 2s ease-in-out infinite;
-  
-  &:nth-child(2) {
-    animation-delay: 0.5s;
-  }
-  
-  &:nth-child(3) {
-    animation-delay: 1s;
-  }
 }
 
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-20px); }
-}
-
-@keyframes twinkle {
-  0%, 100% { opacity: 0.5; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.2); }
 }
 
 // Features Section
@@ -200,7 +176,7 @@
 
 // CTA Section
 .cta {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 50%, #ec4899 100%);
   color: white;
   padding: 6rem 2rem;
   text-align: center;
@@ -240,8 +216,9 @@
     flex-wrap: wrap;
   }
 
-  .bunny {
-    font-size: 6rem;
+  .app-icon {
+    width: 200px;
+    height: 200px;
   }
 
   .features-grid {

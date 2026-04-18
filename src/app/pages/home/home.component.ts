@@ -11,24 +11,24 @@ import { CommonModule } from '@angular/common';
 export class HomeComponent {
   features = [
     {
-      icon: '🚀',
-      title: 'Fast & Modern',
-      description: 'Built with the latest mobile frameworks for optimal performance'
+      icon: '✅',
+      title: 'Simple Task Management',
+      description: 'Create, organize, and complete tasks with an intuitive interface'
     },
     {
       icon: '🎨',
       title: 'Beautiful Design',
-      description: 'Modern UI'
+      description: 'Stunning gradient UI with purple, cyan, and pink colors'
     },
     {
-      icon: '🔧',
-      title: 'Easy to Use',
-      description: 'Intuitive interface designed for the best user experience'
+      icon: '⚡',
+      title: 'Fast & Native',
+      description: 'Built with SwiftUI for lightning-fast performance on macOS'
     },
     {
-      icon: '📱',
-      title: 'Mobile Ready',
-      description: 'Fully responsive design that adapts to any screen size'
+      icon: '💾',
+      title: 'Local Storage',
+      description: 'Your tasks stay on your Mac with SwiftData persistence'
     }
   ];
 }
