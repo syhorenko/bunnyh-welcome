@@ -1,119 +1,45 @@
-<div class="home-container">
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <div class="hero-badge">New Release v1.0.0</div>
-      <h1 class="hero-title">
-        <span class="gradient-text">ToDoShido</span>
-      </h1>
-      <p class="hero-subtitle">
-        Transform the way you manage tasks with a stunning,
-        intuitive macOS app designed for modern productivity
+<div class="page">
+  <main class="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-icon">
+        <img src="/todoshido-icon.png" alt="ToDoShido" class="icon" />
+      </div>
+
+      <h1 class="title">ToDoShido</h1>
+
+      <p class="tagline">A beautiful task manager for macOS</p>
+
+      <p class="description">
+        Minimal. Fast. Private. Everything you need to stay organized,
+        <br>nothing you don't. Built natively for Mac.
       </p>
-      <div class="hero-features">
-        <div class="hero-feature-item">
-          <span class="check-icon">✓</span>
-          <span>Native macOS App</span>
-        </div>
-        <div class="hero-feature-item">
-          <span class="check-icon">✓</span>
-          <span>Lightning Fast</span>
-        </div>
-        <div class="hero-feature-item">
-          <span class="check-icon">✓</span>
-          <span>Privacy First</span>
-        </div>
-      </div>
-      <div class="hero-actions">
-        <a href="/ToDoshido-1.0.0.dmg" download class="btn btn-primary">
-          <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-            <polyline points="7 10 12 15 17 10"></polyline>
-            <line x1="12" y1="15" x2="12" y2="3"></line>
-          </svg>
-          Download for macOS
-        </a>
-        <div class="system-req">macOS 11.0+ • Apple Silicon & Intel</div>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="app-icon-container">
-        <div class="glow-effect"></div>
-        <img src="/todoshido-icon.png" alt="ToDoShido App Icon" class="app-icon" />
-      </div>
-    </div>
-  </section>
 
-  <!-- Features Grid -->
-  <section class="features-section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Everything you need to stay organized</h2>
-        <p class="section-subtitle">Powerful features wrapped in a beautiful interface</p>
-      </div>
+      <a href="/ToDoshido-1.0.0.dmg" download class="download-btn">
+        Download for macOS
+      </a>
 
-      <div class="features-grid">
+      <div class="meta">v1.0.0 • 2.6 MB • macOS 11.0+</div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+      <div class="feature-list">
         @for (feature of features; track feature.title) {
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <div class="feature-icon">{{ feature.icon }}</div>
+          <div class="feature">
+            <div class="feature-icon">{{ feature.icon }}</div>
+            <div class="feature-content">
+              <h3>{{ feature.title }}</h3>
+              <p>{{ feature.description }}</p>
             </div>
-            <h3 class="feature-title">{{ feature.title }}</h3>
-            <p class="feature-description">{{ feature.description }}</p>
           </div>
         }
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Details Section -->
-  <section class="details-section">
-    <div class="container">
-      <div class="details-grid">
-        <div class="detail-item">
-          <div class="detail-icon">🎨</div>
-          <h3>Beautiful by Design</h3>
-          <p>Crafted with attention to every pixel. ToDoShido features a mesmerizing gradient interface with purple, cyan, and pink hues that make task management a visual delight.</p>
-        </div>
-        <div class="detail-item">
-          <div class="detail-icon">⚡</div>
-          <h3>Built with SwiftUI</h3>
-          <p>Native macOS performance powered by SwiftUI and SwiftData. Experience buttery smooth animations and instant responsiveness that only native apps can deliver.</p>
-        </div>
-        <div class="detail-item">
-          <div class="detail-icon">🔒</div>
-          <h3>Your Data, Your Mac</h3>
-          <p>All your tasks are stored locally using SwiftData. No cloud sync, no accounts, no tracking. Complete privacy and offline access guaranteed.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="cta-section">
-    <div class="cta-glow"></div>
-    <div class="container">
-      <div class="cta-content">
-        <h2 class="cta-title">Ready to transform your productivity?</h2>
-        <p class="cta-subtitle">Join the modern way of managing tasks. Download ToDoShido now and experience the difference.</p>
-        <a href="/ToDoshido-1.0.0.dmg" download class="btn btn-primary btn-large">
-          <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-            <polyline points="7 10 12 15 17 10"></polyline>
-            <line x1="12" y1="15" x2="12" y2="3"></line>
-          </svg>
-          Download ToDoShido v1.0.0
-        </a>
-        <p class="cta-note">Free • 2.6 MB • Instant Download</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 ToDoShido. Built with ❤️ for macOS.</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Made with ❤️ for macOS • 2026</p>
+    </footer>
+  </main>
 </div>
