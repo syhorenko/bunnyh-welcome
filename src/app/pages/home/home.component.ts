@@ -11,24 +11,34 @@ import { CommonModule } from '@angular/common';
 export class HomeComponent {
   features = [
     {
-      icon: '✅',
-      title: 'Simple Task Management',
-      description: 'Create, organize, and complete tasks with an intuitive interface'
+      icon: '✨',
+      title: 'Elegant Interface',
+      description: 'A stunning gradient design that transforms task management into a delightful visual experience'
     },
     {
-      icon: '🎨',
-      title: 'Beautiful Design',
-      description: 'Stunning gradient UI with purple, cyan, and pink colors'
+      icon: '🚀',
+      title: 'Native Performance',
+      description: 'Built exclusively for macOS with SwiftUI, delivering smooth 60fps animations and instant response'
     },
     {
-      icon: '⚡',
-      title: 'Fast & Native',
-      description: 'Built with SwiftUI for lightning-fast performance on macOS'
+      icon: '🔐',
+      title: 'Privacy Focused',
+      description: 'All data stored locally on your Mac. No accounts, no cloud, no tracking - complete privacy guaranteed'
     },
     {
-      icon: '💾',
-      title: 'Local Storage',
-      description: 'Your tasks stay on your Mac with SwiftData persistence'
+      icon: '📋',
+      title: 'Smart Organization',
+      description: 'Intuitive task creation and management with categories, priorities, and quick search'
+    },
+    {
+      icon: '🎯',
+      title: 'Distraction Free',
+      description: 'Clean, minimal interface that lets you focus on what matters most - getting things done'
+    },
+    {
+      icon: '⚙️',
+      title: 'Lightweight',
+      description: 'Just 2.6 MB download size with zero bloat. Fast to download, faster to use'
     }
   ];
 }
