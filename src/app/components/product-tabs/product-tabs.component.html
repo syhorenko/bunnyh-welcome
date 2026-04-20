@@ -1,0 +1,22 @@
+<nav class="tabs">
+  <div class="container">
+    <div class="tabs-list">
+      @for (product of products; track product.name) {
+        @if (product.disabled) {
+          <div class="tab tab-disabled">
+            {{ product.name }}
+          </div>
+        } @else {
+          <a
+            [routerLink]="product.route"
+            routerLinkActive="tab-active"
+            class="tab"
+          >
+            {{ product.name }}
+          </a>
+        }
+      }
+      <div class="tab tab-disabled">+ Later</div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,52 @@
+@if (product) {
+  <div class="product-page">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">{{ product.name }}</h1>
+            <p class="hero-tagline">{{ product.tagline }}</p>
+            <p class="hero-description">{{ product.description }}</p>
+
+            <a [href]="product.downloadUrl" download class="download-btn">
+              Download for macOS
+            </a>
+
+            <div class="hero-meta">
+              {{ product.version }} • {{ fileSize }} • {{ product.systemReq }}
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <img [src]="product.imagePath" [alt]="product.name" class="product-icon" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="features-grid">
+          @for (feature of product.features; track feature.title) {
+            <div class="feature-card">
+              <div class="feature-icon">{{ feature.icon }}</div>
+              <div class="feature-content">
+                <h3 class="feature-title">{{ feature.title }}</h3>
+                <p class="feature-description">{{ feature.description }}</p>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </section>
+  </div>
+} @else {
+  <div class="not-found">
+    <div class="container">
+      <h1>Product not found</h1>
+      <p>The product you're looking for doesn't exist.</p>
+    </div>
+  </div>
+}
