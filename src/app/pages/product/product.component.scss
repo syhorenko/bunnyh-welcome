@@ -86,6 +86,66 @@
   border-radius: 56px;
 }
 
+// Screenshots Section
+.screenshots {
+  padding: 80px 0 64px;
+  border-top: 1px solid #24262d;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #f3f4f6;
+  margin: 0 0 12px;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #a1a1aa;
+  margin: 0 0 48px;
+  text-align: center;
+}
+
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.screenshot-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.screenshot-wrapper {
+  background: #141519;
+  border: 1px solid #24262d;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: #2f3038;
+    transform: translateY(-4px);
+  }
+}
+
+.screenshot-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.screenshot-caption {
+  font-size: 14px;
+  color: #71717a;
+  margin: 0;
+  text-align: center;
+}
+
 // Features Section
 .features {
   padding: 64px 0 80px;
@@ -196,5 +256,18 @@
   .feature-card {
     flex-direction: column;
     text-align: center;
+  }
+
+  .screenshots-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 15px;
   }
 }

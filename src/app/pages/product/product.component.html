@@ -25,6 +25,25 @@
       </div>
     </section>
 
+    <!-- Screenshots Section -->
+    <section class="screenshots">
+      <div class="container">
+        <h2 class="section-title">See it in action</h2>
+        <p class="section-subtitle">A closer look at ToDoShido's beautiful interface</p>
+
+        <div class="screenshots-grid">
+          @for (screenshot of product.screenshots; track screenshot.src) {
+            <div class="screenshot-item">
+              <div class="screenshot-wrapper">
+                <img [src]="screenshot.src" [alt]="screenshot.alt" class="screenshot-img" />
+              </div>
+              <p class="screenshot-caption">{{ screenshot.caption }}</p>
+            </div>
+          }
+        </div>
+      </div>
+    </section>
+
     <!-- Features Section -->
     <section class="features">
       <div class="container">

@@ -8,6 +8,12 @@ interface Feature {
   description: string;
 }
 
+interface Screenshot {
+  src: string;
+  alt: string;
+  caption: string;
+}
+
 interface ProductData {
   name: string;
   tagline: string;
@@ -17,6 +23,7 @@ interface ProductData {
   systemReq: string;
   imagePath: string;
   features: Feature[];
+  screenshots: Screenshot[];
 }
 
 @Component({
@@ -58,6 +65,28 @@ export class ProductComponent implements OnInit {
           icon: '🎯',
           title: 'Zero Clutter',
           description: 'No unnecessary features. No distractions. Just what you need to get things done efficiently.'
+        }
+      ],
+      screenshots: [
+        {
+          src: '/screenshots/inbox.png',
+          alt: 'ToDoShido Inbox',
+          caption: 'Clean inbox view with priority indicators'
+        },
+        {
+          src: '/screenshots/week-overview.png',
+          alt: 'Week Overview',
+          caption: 'Weekly timeline showing created and completed tasks'
+        },
+        {
+          src: '/screenshots/archive.png',
+          alt: 'Archive',
+          caption: 'All completed tasks organized by date'
+        },
+        {
+          src: '/screenshots/settings.png',
+          alt: 'Settings',
+          caption: 'Simple settings with global hotkey support'
         }
       ]
     }
