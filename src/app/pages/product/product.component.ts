@@ -41,7 +41,7 @@ export class ProductComponent implements OnInit {
       name: 'ToDoShido',
       tagline: 'A beautiful task manager for macOS',
       description: 'Minimal. Fast. Private. Everything you need to stay organized, nothing you don\'t. Built natively for Mac.',
-      downloadUrl: '/ToDoshido-1.0.0.dmg',
+      downloadUrl: 'https://github.com/syhorenko/todoshido/releases/download/1.0.0/ToDoshido-1.0.0.dmg',
       version: 'v1.0.0',
       systemReq: 'macOS 11.0+',
       imagePath: '/todoshido-icon.png',
