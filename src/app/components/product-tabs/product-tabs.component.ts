@@ -12,6 +12,7 @@ import { CommonModule } from '@angular/common';
 export class ProductTabsComponent {
   products = [
     { name: 'ToDoShido', route: '/products/todoshido' },
+    { name: 'PetWheel', route: '/products/petwheel' },
     { name: 'FocusApp', route: '/products/focusapp', disabled: true },
     { name: 'HabitFlow', route: '/products/habitflow', disabled: true }
   ];

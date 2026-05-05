@@ -11,7 +11,8 @@ import { CommonModule } from '@angular/common';
 })
 export class NavigationComponent {
   menuItems = [
-    { label: 'Home', route: '/', icon: '🏠' },
+    { label: 'ToDoShido', route: '/products/todoshido', icon: '✅' },
+    { label: 'PetWheel', route: '/products/petwheel', icon: '🐾' },
     { label: 'About Us', route: '/about', icon: '👥' },
     { label: 'Contact Us', route: '/contact', icon: '📧' }
   ];

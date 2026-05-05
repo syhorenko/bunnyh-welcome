@@ -9,12 +9,16 @@
             <p class="hero-tagline">{{ product.tagline }}</p>
             <p class="hero-description">{{ product.description }}</p>
 
-            <a [href]="product.downloadUrl" download class="download-btn">
-              Download for macOS
-            </a>
+            @if (product.downloadDisabled) {
+              <span class="download-btn download-btn-disabled">{{ product.downloadLabel }}</span>
+            } @else {
+              <a [href]="product.downloadUrl" [attr.download]="product.downloadLabel === 'Download for macOS' ? '' : null" class="download-btn">
+                {{ product.downloadLabel }}
+              </a>
+            }
 
             <div class="hero-meta">
-              {{ product.version }} • {{ fileSize }} • {{ product.systemReq }}
+              {{ product.version }} • {{ product.fileSize }} • {{ product.systemReq }}
             </div>
           </div>
 
@@ -29,7 +33,7 @@
     <section class="screenshots">
       <div class="container">
         <h2 class="section-title">See it in action</h2>
-        <p class="section-subtitle">A closer look at ToDoShido's beautiful interface</p>
+        <p class="section-subtitle">{{ product.screenshotSubtitle }}</p>
 
         <div class="screenshots-grid">
           @for (screenshot of product.screenshots; track screenshot.src) {

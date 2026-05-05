@@ -47,6 +47,12 @@
   line-height: 1.7;
 }
 
+.download-btn-disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .download-btn {
   display: inline-block;
   padding: 14px 32px;
