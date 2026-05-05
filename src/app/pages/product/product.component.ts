@@ -143,42 +143,42 @@ export class ProductComponent implements OnInit {
       ],
       screenshots: [
         {
-          src: '/screenshots/petwheel/my-wheels.png',
+          src: '/screenshots/petwheel/my-wheels.jpg',
           alt: 'My Wheels',
           caption: 'All your wheels at a glance — total rotations and distance'
         },
         {
-          src: '/screenshots/petwheel/wheel-detail-connected.png',
+          src: '/screenshots/petwheel/wheel-detail-connected.jpg',
           alt: 'Wheel Detail — Live Session',
           caption: 'Live session updates in real time as your pet runs'
         },
         {
-          src: '/screenshots/petwheel/wheel-detail-disconnected.png',
+          src: '/screenshots/petwheel/wheel-detail-disconnected.jpg',
           alt: 'Wheel Detail — Sync History',
           caption: 'Total stats and full sync history, even when offline'
         },
         {
-          src: '/screenshots/petwheel/wheel-history.png',
+          src: '/screenshots/petwheel/wheel-history.jpg',
           alt: 'Wheel History & Settings',
           caption: 'Browse every past session and configure wheel diameter'
         },
         {
-          src: '/screenshots/petwheel/add-wheel.png',
+          src: '/screenshots/petwheel/add-wheel.jpg',
           alt: 'Add Wheel',
           caption: 'Scan for your ESP32 CatWheel and pair it in seconds'
         },
         {
-          src: '/screenshots/petwheel/activity-wheel.png',
+          src: '/screenshots/petwheel/activity-wheel.jpg',
           alt: 'Activity Wheel',
           caption: 'Spin the wheel to pick a random activity for your pet'
         },
         {
-          src: '/screenshots/petwheel/my-pets.png',
+          src: '/screenshots/petwheel/my-pets.jpg',
           alt: 'My Pets',
           caption: 'Manage multiple pets and see their last recorded activity'
         },
         {
-          src: '/screenshots/petwheel/add-pet.png',
+          src: '/screenshots/petwheel/add-pet.jpg',
           alt: 'Add a Pet',
           caption: 'Add any pet — cat, dog, rabbit, hamster, bird and more'
         }
