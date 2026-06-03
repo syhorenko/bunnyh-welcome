@@ -9,7 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:bunnyh-welcome-angular": "node dist/bunnyh-welcome-angular/server/server.mjs",
-    "deploy": "npm run build:github-pages && cp CNAME docs/ && cp docs/index.html docs/404.html && git add docs && git commit -m 'Deploy Angular app to GitHub Pages' && git push origin main"
+    "deploy": "npm run build:github-pages && cp CNAME docs/ && cp docs/index.html docs/404.html && git add docs && git commit -m 'Deploy Angular app to GitHub Pages' && git push origin develop && git checkout main && git merge develop && git push origin main && git checkout develop"
   },
   "prettier": {
     "printWidth": 100,

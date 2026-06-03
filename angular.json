@@ -58,7 +58,11 @@
             "github-pages": {
               "baseHref": "/",
               "outputHashing": "all",
-              "outputMode": "static"
+              "outputMode": "static",
+              "outputPath": {
+                "base": "docs",
+                "browser": ""
+              }
             },
             "development": {
               "optimization": false,

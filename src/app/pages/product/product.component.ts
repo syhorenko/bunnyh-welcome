@@ -97,6 +97,51 @@ export class ProductComponent implements OnInit {
         }
       ]
     },
+    switch4me: {
+      name: 'switch4me',
+      tagline: 'Fix text typed in the wrong keyboard layout — instantly',
+      description: 'You typed ghbdtn but meant привет. Select the text, press the hotkey, and it\'s converted. Works in any macOS application with no copy-paste hassle.',
+      downloadUrl: '/switch4me.dmg',
+      downloadLabel: 'Download for macOS',
+      version: 'v1.0',
+      fileSize: '1.8 MB',
+      systemReq: 'macOS 14.0+',
+      imagePath: '/switch4me-icon.png',
+      screenshotSubtitle: 'Lightweight and lives in your menu bar',
+      features: [
+        {
+          icon: '⌨️',
+          title: 'Instant Conversion',
+          description: 'Select mistyped text, press ⌥Space, and it\'s fixed. Supports bidirectional EN↔RU conversion with automatic direction detection.'
+        },
+        {
+          icon: '🌐',
+          title: 'Works Everywhere',
+          description: 'A system-wide hotkey intercepts your shortcut globally via CGEvent — works in any macOS app, no matter which one is focused.'
+        },
+        {
+          icon: '📋',
+          title: 'Clipboard-Safe',
+          description: 'Your original clipboard contents are saved before conversion and fully restored after. No surprises when you paste next.'
+        },
+        {
+          icon: '🔧',
+          title: 'Custom Hotkey',
+          description: 'Change the default ⌥Space to any key combo you prefer. Single keys and modifier-only combos are supported. Press Escape to cancel.'
+        },
+        {
+          icon: '🚀',
+          title: 'Launch at Login',
+          description: 'Set it once and forget it. switch4me starts automatically with macOS and sits quietly in your menu bar until you need it.'
+        },
+        {
+          icon: '🪶',
+          title: 'Lightweight',
+          description: 'Just 1.8 MB. No subscription, no cloud, no background telemetry. A tiny native app that does one thing perfectly.'
+        }
+      ],
+      screenshots: []
+    },
     petwheel: {
       name: 'PetWheel',
       tagline: 'Smart activity tracker for your cat\'s running wheel',

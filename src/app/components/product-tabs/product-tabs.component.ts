@@ -13,6 +13,7 @@ export class ProductTabsComponent {
   products = [
     { name: 'ToDoShido', route: '/products/todoshido' },
     { name: 'PetWheel', route: '/products/petwheel' },
+    { name: 'switch4me', route: '/products/switch4me' },
     { name: 'FocusApp', route: '/products/focusapp', disabled: true },
     { name: 'HabitFlow', route: '/products/habitflow', disabled: true }
   ];
